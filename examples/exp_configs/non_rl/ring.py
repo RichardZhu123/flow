@@ -59,5 +59,5 @@ flow_params = dict(
         bunching=20,
     ),
 
-    tls=TrafficLightParams,
+    tls=TrafficLightParams(),
 )
