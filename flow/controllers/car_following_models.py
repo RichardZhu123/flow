@@ -458,7 +458,7 @@ class IDMController(BaseController):
                  delta=4,
                  s0=2,
                  time_delay=0.0,
-                 noise=0,
+                 noise=0.2,
                  fail_safe=None,
                  display_warnings=True,
                  car_following_params=None):
