@@ -53,7 +53,7 @@ vehicles.add(
     }),
     lane_change_controller=(SimLaneChangeController, {}),
     routing_controller=(ContinuousRouter, {}),
-    num_vehicles=6,
+    num_vehicles=21,
     car_following_params=SumoCarFollowingParams(minGap=0.0, tau=0.5),
     lane_change_params=SumoLaneChangeParams())
 # A single learning agent in the inner ring
@@ -77,7 +77,7 @@ vehicles.add(
     }),
     lane_change_controller=(SimLaneChangeController, {}),
     routing_controller=(ContinuousRouter, {}),
-    num_vehicles=10,
+    num_vehicles=22,
     car_following_params=SumoCarFollowingParams(minGap=0.0, tau=0.5),
     lane_change_params=SumoLaneChangeParams())
 
