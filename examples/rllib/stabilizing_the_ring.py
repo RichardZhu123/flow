@@ -35,12 +35,12 @@ vehicles.add(
         "noise": 0.2
     }),
     routing_controller=(ContinuousRouter, {}),
-    num_vehicles=21)
+    num_vehicles=11)
 vehicles.add(
     veh_id="rl",
     acceleration_controller=(RLController, {}),
     routing_controller=(ContinuousRouter, {}),
-    num_vehicles=1)
+    num_vehicles=11)
 
 flow_params = dict(
     # name of the experiment
@@ -126,6 +126,7 @@ def setup_exps():
 if __name__ == "__main__":
     alg_run, gym_name, config = setup_exps()
     ray.init(num_cpus=N_CPUS + 1, redirect_output=False)
+    
     trials = run_experiments({
         flow_params["exp_tag"]: {
             "run": alg_run,
